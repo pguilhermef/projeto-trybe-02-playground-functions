@@ -9,29 +9,43 @@ function compareTrue(x, y) {
 
 // Desafio 2
 function calcArea(base, altura) {
-  triangulo = (base*altura)/2
-  return triangulo
+  let triangulo = (base*altura)/2;
+  return triangulo;
 }
 
 // Desafio 3
 function splitSentence(frase) {
-  fraseRecortada = frase.split(" ")
-  return fraseRecortada
+  let fraseRecortada = frase.split(" ");
+  return fraseRecortada;
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(array) {
+  let primeiroItem = array.splice(0, 1);
+  let ultimoItem = array.splice(-1, 1);
+  let retorno = ultimoItem + primeiroItem;
+  return retorno;
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let vitorias = 3;
+  let empates = 1;
+  let pontuação = (wins * vitorias)+(ties * empates);
+  return pontuação;
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(array) {
+  let repetições = 0
+  let maiorNumero = 0
+  
+  for (index = 0; index < array.length; index ++){
+    if (array[index] > maiorNumero){
+      maiorNumero = array[index];
+    }
+  }
+  return repetições
 }
 
 // Desafio 7
