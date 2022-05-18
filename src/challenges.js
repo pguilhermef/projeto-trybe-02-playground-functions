@@ -23,7 +23,7 @@ function splitSentence(frase) {
 function concatName(array) {
   let primeiroItem = array.splice(0, 1);
   let ultimoItem = array.splice(-1, 1);
-  let retorno = ultimoItem + primeiroItem;
+  let retorno = ultimoItem + ", " + primeiroItem;
   return retorno;
 }
 
@@ -56,8 +56,13 @@ function highestCount(array) {
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  rato = mouse
+  gato1 = cat1
+  gato2 = cat2
+
+  if ()
+
 }
 
 // Desafio 8
