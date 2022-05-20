@@ -1,11 +1,19 @@
 // Desafio 11
 function generatePhoneNumber() {
-  // seu código aquiii
+//
 }
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(line1, line2, line3) {
+  let catetoA = line1
+  let catetoB = line2
+  let catetoC = line3
+  let possibilidade = false
+
+  if ((catetoA < (catetoB + catetoC)) && (catetoB < (catetoA + catetoC)) && (catetoC < (catetoA + catetoB))){
+    possibilidade = true
+  }
+  return possibilidade
 }
 
 // Desafio 13
