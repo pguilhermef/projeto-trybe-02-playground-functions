@@ -88,12 +88,29 @@ function fizzBuzz(array) {
   return retorno
 }
 
-// Desafio 9
-function encode() {
-  // seu código aqui
+// Desafio 9 // 
+// Onde peguei referência para essa resolução: https://www.youtube.com/watch?v=UShV_TFxs_A&ab_channel=Trybe
+
+function encode(string) {
+  let codifica = string;
+  let mudaA = codifica.replace(/a/g, "1");
+  let mudaE = mudaA.replace(/e/g, "2");
+  let mudaI = mudaE.replace(/i/g, "3");
+  let mudaO = mudaI.replace(/o/g, "4");
+  let mudaU = mudaO.replace(/u/g, "5");
+
+  return mudaU;
 }
-function decode() {
-  // seu código aqui
+
+function decode(string) {
+  let decodifica = string;
+  let muda1 = decodifica.replace(/1/g, "a");
+  let muda2 = muda1.replace(/2/g, "e");
+  let muda3 = muda2.replace(/3/g, "i");
+  let muda4 = muda3.replace(/4/g, "o");
+  let muda5 = muda4.replace(/5/g, "u");
+
+  return muda5;
 }
 
 // Desafio 10
