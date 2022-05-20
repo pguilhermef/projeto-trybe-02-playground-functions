@@ -72,20 +72,18 @@ function catAndMouse(mouse, cat1, cat2) {
 
 // Desafio 8
 function fizzBuzz(array) {
-
   let retorno = []
 
   for (let index = 0; index < array.length; index++) {
-    if (array[index] % 3 === 0 && array.[index] % 5 === 0){
+    if ((array[index] % 3 === 0) && ((array[index] % 5 === 0)) ){
       retorno.push("fizzBuzz");
-    } else if (array[index] % 3 === 0){
+    } else if (array[index] % 3 === 0) {
       retorno.push("fizz");
-    } else if (array[index] % 5 === 0){
-      retorno.push("buzz");
+    } else if (array[index] % 5 === 0) {
+      retorno.push("buzz")
     } else {
-      return "bug!"
+      retorno.push("bug!")
     }
-    
   }
   return retorno
 }
