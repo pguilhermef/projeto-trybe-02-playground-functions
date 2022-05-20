@@ -1,6 +1,6 @@
 // Desafio 11
 function generatePhoneNumber() {
-//
+
 }
 
 // Desafio 12
@@ -19,17 +19,23 @@ function triangleCheck(line1, line2, line3) {
 // Desafio 13
 function hydrate(frase) {
   
-  let regular = /\d+/g;
-  let resultado = frase.match(regular)
-  let soma = 1
+  let regular = frase.replace(/[^0-9]/g, '');
+  let array = regular.split('')
+  let numeros = array.map((number) => parseInt(number, 10))
+  let soma = 0
 
-  for (let index = 0; index < resultado.length; index++) {
-    soma += resultado[index]     
+  for (let numero of numeros){
+    if (numero < 1 || numero > 9){
+      return '0 copos de água'
+    }
+    soma += numero
   }
 
-  let fraseFinal = (soma + " copo de água")
-
-  return fraseFinal
+  if (soma > 1){
+    return soma + ' copos de água'
+  } else {
+    return soma + ' copo de água'
+  }
 
 }
 
