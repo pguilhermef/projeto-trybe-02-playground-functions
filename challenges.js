@@ -63,7 +63,8 @@ function catAndMouse(mouse, cat1, cat2) {
 
   if ((Math.abs(rato - gato1)) < (Math.abs(rato - gato2))){
     return 'cat1';
-  } else if ((Math.abs(rato - gato1)) === (Math.abs(rato - gato2))){
+  } else if ((
+    (rato - gato1)) === (Math.abs(rato - gato2))){
     return 'os gatos trombam e o rato foge';
   } else{
     return 'cat2';
@@ -86,6 +87,8 @@ function fizzBuzz(array) {
     }
   }
   return retorno
+
+for
 }
 
 // Desafio 9 // 
